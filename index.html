@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>管理员确认</title>
+	<!-- 引入Bootstrap样式文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-3">
+		<h1>管理员确认</h1>
+		<p>请确认您是否为管理员：</p>
+		<button class="btn btn-primary" onclick="goToPasswordInput()">是，我是管理员</button>
+		<button class="btn btn-secondary" onclick="goToWelcome()">不是，我只是普通用户</button>
+	</div>
+	
+	<!-- 引入Bootstrap脚本文件 -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+	<script>
+		function goToPasswordInput() {
+			// 跳转到密码输入页面
+			window.location.href = "admin-password.html";
+		}
+		
+		function goToWelcome() {
+			// 跳转到欢迎页面
+			window.location.href = "welcome.html";
+		}
+	</script>
+</body>
+</html>
